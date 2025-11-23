@@ -8,11 +8,11 @@ const THEME_ITEM_HEIGHT = 16;
 const VSCODE_ITEM_HEIGHT = 22;
 
 const prog = process.argv[2];
-let file = "";
+let file = process.argv[3] || "";
 let patches = [];
 switch (prog) {
 	case "vscode":
-		file = "/usr/lib/code/out/vs/workbench/workbench.desktop.main.js";
+		if (!file) file = "/usr/lib/code/out/vs/workbench/workbench.desktop.main.js";
 		patches = [
 			[
 				new RegExp(`(ITEM_HEIGHT=)${VSCODE_ITEM_HEIGHT}`),
@@ -30,13 +30,15 @@ switch (prog) {
 	case "steam": {
 		const fill = (n) => Array(n.length).fill("0").join("");
 
-		file = path.join(
-			process.env.HOME,
-			".steam",
-			"steam",
-			"steamui",
-			"chunk~2dcc5aaf7.js",
-		);
+		if (!file) {
+			file = path.join(
+				process.env.HOME,
+				".steam",
+				"steam",
+				"steamui",
+				"chunk~2dcc5aaf7.js",
+			);
+		}
 		patches = [
 			// Library sidebar
 			[/(bIsCollection,)26/, `$1${THEME_ITEM_HEIGHT}`],

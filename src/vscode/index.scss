@@ -1,5 +1,19 @@
 @use "global" as global;
 
+@use "extensions/shalldie.background" as extensions-shalldie-background;
+
+@use "global/controls" as global-controls;
+@use "global/icons" as global-icons;
+@use "global/tabs" as global-tabs;
+@use "global/text" as global-text;
+@use "global/tree" as global-tree;
+@use "global/variables" as global-variables;
+@use "global/window" as global-window;
+
+@use "pages/extensions" as pages-extensions;
+@use "pages/gettingstarted" as pages-gettingstarted;
+@use "pages/settings" as pages-settings;
+
 @use "parts/activitybar" as parts-activitybar;
 @use "parts/editor" as parts-editor;
 @use "parts/menubar" as parts-menubar;
@@ -9,8 +23,6 @@
 @use "parts/statusbar" as parts-statusbar;
 @use "parts/titlebar" as parts-titlebar;
 @use "parts/toolbar" as parts-toolbar;
-
-@use "extensions/shalldie.background" as extensions-shalldie-background;
 
 @use "popup/dialog" as popup-dialog;
 @use "popup/find" as popup-find;
@@ -22,15 +34,3 @@
 @use "popup/select" as popup-select;
 @use "popup/suggest" as popup-suggest;
 @use "popup/tooltip" as popup-tooltip;
-
-@use "pages/extensions" as pages-extensions;
-@use "pages/gettingstarted" as pages-gettingstarted;
-@use "pages/settings" as pages-settings;
-
-@use "global/controls" as global-controls;
-@use "global/icons" as global-icons;
-@use "global/tabs" as global-tabs;
-@use "global/text" as global-text;
-@use "global/tree" as global-tree;
-@use "global/variables" as global-variables;
-@use "global/window" as global-window;

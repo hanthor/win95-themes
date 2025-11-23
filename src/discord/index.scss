@@ -1,23 +1,5 @@
 @use "global" as global;
 
-@use "parts/chatform" as parts-chatform;
-@use "parts/chat" as parts-chat;
-@use "parts/friends" as parts-friends;
-@use "parts/guilds" as parts-guilds;
-@use "parts/search" as parts-search;
-@use "parts/sidebar" as parts-sidebar;
-@use "parts/threads" as parts-threads;
-@use "parts/titlebar" as parts-titlebar;
-@use "parts/toolbar" as parts-toolbar;
-@use "parts/window" as parts-window;
-
-@use "parts/chat/messages" as parts-chat-messages;
-
-@use "parts/sidebar/header" as parts-sidebar-header;
-@use "parts/sidebar/privatechannels" as parts-sidebar-privatechannels;
-@use "parts/sidebar/serverchannels" as parts-sidebar-serverchannels;
-@use "parts/sidebar/userarea" as parts-sidebar-userarea;
-
 @use "dialogs/attachfiles" as dialogs-attachfiles;
 @use "dialogs/customstatus" as dialogs-customstatus;
 @use "dialogs/linkcallout" as dialogs-linkcallout;
@@ -45,15 +27,23 @@
 @use "global/controls/tab" as global-controls-tab;
 @use "global/controls/textfield" as global-controls-textfield;
 
-@use "vencord/controls" as vencord-controls;
-@use "vencord/reviewdb" as vencord-reviewdb;
-@use "vencord/screenpicker" as vencord-screenpicker;
-@use "vencord/settings" as vencord-settings;
+@use "parts/chatform" as parts-chatform;
+@use "parts/chat" as parts-chat;
+@use "parts/friends" as parts-friends;
+@use "parts/guilds" as parts-guilds;
+@use "parts/search" as parts-search;
+@use "parts/sidebar" as parts-sidebar;
+@use "parts/threads" as parts-threads;
+@use "parts/titlebar" as parts-titlebar;
+@use "parts/toolbar" as parts-toolbar;
+@use "parts/window" as parts-window;
 
-@use "settings/appearance" as settings-appearance;
-@use "settings/contentsocial" as settings-contentsocial;
-@use "settings/notifications" as settings-notifications;
-@use "settings/profilecustomization" as settings-profilecustomization;
+@use "parts/chat/messages" as parts-chat-messages;
+
+@use "parts/sidebar/header" as parts-sidebar-header;
+@use "parts/sidebar/privatechannels" as parts-sidebar-privatechannels;
+@use "parts/sidebar/serverchannels" as parts-sidebar-serverchannels;
+@use "parts/sidebar/userarea" as parts-sidebar-userarea;
 
 @use "popups/autocomplete" as popups-autocomplete;
 @use "popups/colorpicker" as popups-colorpicker;
@@ -67,3 +57,13 @@
 @use "popups/userpopoutown" as popups-userpopoutown;
 @use "popups/userpopout" as popups-userpopout;
 @use "popups/usershared" as popups-usershared;
+
+@use "settings/appearance" as settings-appearance;
+@use "settings/contentsocial" as settings-contentsocial;
+@use "settings/notifications" as settings-notifications;
+@use "settings/profilecustomization" as settings-profilecustomization;
+
+@use "vencord/controls" as vencord-controls;
+@use "vencord/reviewdb" as vencord-reviewdb;
+@use "vencord/screenpicker" as vencord-screenpicker;
+@use "vencord/settings" as vencord-settings;
